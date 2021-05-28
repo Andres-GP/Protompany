@@ -1,0 +1,11 @@
+{
+  "name": "protompany",
+  "version": "1.0.0",
+  "description": "protompany landing page",
+  "main": "scripts/index.js",
+  "scripts": {
+    "callbackChallenge": "node/protompany/scripts/ApiRequest.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index,follow"> 
+
+  <!--Quicksand Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+  <!--Roboto Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Protompany</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Header-->
+    <header class="header">
+        <div class="header__inner">
+            <figure class="header__inner__logoContainer">
+                <img class="header__inner__logoContainer__logo" src="./assets/imgs/Protompany_Logo.svg" alt="">
+            </figure> 
+            <!--navigation menu-->
+            <ul class="header__inner__navMenu">
+                <a><li>Home</li></a>
+                <a><li>About</li></a>
+                <a><li>Testimonials</li></a>
+                <a><li>Contact</li></a>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!--1st Page-->
+
+
+<!--Title and Description-->
+<div class="layerBackground"></div>
+<div class="layer">
+    <div class="layer__1stPage">
+        <div class="layer__1stPage__TitleDescriptionSection">
+            <div class="layer__1stPage__TitleDescriptionSection__TitleDescriptionSection__TitleDescriptionContainer">
+                <diV class="layer__1stPage__TitleDescriptionSection__TitleDescriptionSection__TitleDescriptionContainer__TitleContainer">
+                    <strong class="layer__1stPage__TitleDescriptionSection__TitleDescriptionSection__TitleDescriptionContainer__TitleContainer__Title">
+                        We do lightning fast prototyping
+                    </strong>
+                </diV>
+                <div class="layer__1stPage__TitleDescriptionSection__TitleDescriptionContainer__DescriptionContainer">
+                    <b class="layer__1stPage__TitleDescriptionSection__TitleDescriptionContainer__DescriptionContainer__Description">
+                        Here in protompany we do it fast, beautiful, different and tip sharp modern for all our clients
+                    </b>
+                </div>
+            </div>
+        </div>
+        
+        
+    <!--Call to Action Button-->
+        <div class="layer__1stPage__callToAction__section">
+            <div class="layer__1stPage__callToAction__section__container">
+                <button class="layer__1stPage__callToAction__section__container__button">Download our app</button>
+            </div>
+        </div>
+    
+        <figure class="layer__1stPage__bottomImageContainer">
+            <img class="layer__1stPage__bottomImageContainer__bottomImage" src="./assets/imgs/BottomHomeImgs.svg" alt="">
+        </figure>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--2nd Page-->
+<div class="secondPage">
+    <!--title and subtitle-->
+    <div class="secondPage__titleAndDescriptionContainer">
+        <div class="secondPage__titleAndDescriptionContainer__titleContainer">
+            <strong>Take a look at our work</strong>
+        </div>
+        <div class="secondPage__titleAndDescriptionContainer__subTitleContainer">
+            <b>We design for new and special companies, we like to do it
+                different and to do it beautiful.</b>
+
+                <div class="secondPage__titleAndDescriptionContainer__subTitleContainer__ButtonsContainer">
+                    <button class="button__tryForFree">Try For Free</button>
+                    <button class="button__learnMore">Learn More</button>
+               </div>
+        </div>
+    </div>
+    <figure class="secondPage__titleAndDescriptionContainer__backgroundImageContainer">
+        <img class="secondPage__titleAndDescriptionContainer__backgroundImageContainer__backgroundImage" src="./assets/imgs/SecondScreenShapes.svg" alt="">
+    </figure>
+    <!--Simon Says-->
+    <div class="secondPage__simonSaysPrototypeContainer">
+        <div class="gameboard">
+            <div id="blue" class="color blue left" data-color="blue"></div>
+            <div id="violet" class="color violet right" data-color="violet"></div>
+            <div id="orange" class="color orange left" data-color="orange"></div>
+            <div id="green" class="color green right" data-color="green"></div>
+          </div>
+          <div class="btn-start-container">
+            <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Start</button>
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--3rd Page-->
+<!--title and subtitle-->
+<figure class="thirdPageBackgroundImageContainer">
+    <img class="thirdPageBackgroundImageContainer__backgroundImage" src="./assets/imgs/ThirdScreenShapes.svg" alt="">
+</figure>
+<div class="videoTitleAndDescriptionSection">
+    <div class="videoTitleAndDescriptionSection__videoTitleAndDescriptionContainer">
+        <div class="videoTitleAndDescriptionSection__videoTitleAndDescriptionContainer_titleContainer">
+            <strong class="videoTitleAndDescriptionSection__videoTitleAndDescriptionContainer_titleContainer__videoTitle">We work at the speed of thought</strong>
+        </div>
+        <div class="videoTitleAndDescriptionSection__videoTitleAndDescriptionContainer_subTitleContainer">
+            <b class="videoTitleAndDescriptionSection__videoTitleAndDescriptionContainer_subTitleContainer__videoSubtitle">We use openType features and variable fonts, just tell us what fo you want
+                and it will be done
+            </b>
+        </div>
+    </div>
+</div>
+<!--video-->
+<figure class="thirdPageBacgroundMacContainer">
+    <img class="thirdPageBacgroundMacContainer__MacScreen" src="./assets/imgs/MacScreen.svg" alt="">
+</figure>
+<figure class="thirdPageVideoBackgroundImageContainer">
+    <img class="thirdPageVideoBackgroundImageContainer__Img" src="./assets/imgs/VideoBackground.svg" alt="">
+</figure>
+<div class="thirdPagevideoPlayerScreen">
+    <div class="thirdPagevideoPlayerScreen__videoPlayerContainer">    
+        <div class="thirdPagevideoPlayerScreen__videoPlayerContainer__videoPlayerContainer">
+            <video class="thirdPagevideoPlayerScreen__videoPlayerContainer__videoPlayerContainer__videoPlayer"  controls preload="auto">
+                <source src="./assets/video/Mobile App Promo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--4th page-->
+<div class="fourthPagetitleAndDscription">
+    <div class="fourthPageTitleAndDscription__titleContainer">
+        <strong class="fourthPageTitleAndDscription__titleContainer__title">Our Clients Speak</strong>
+    </div>
+    <div class="fourthPageTitleAndDscription__subTitleContainer">
+        <b class="fourthPageTitleAndDscription__subTitleContainer__subtitle">We have been working with clients around the world</b>
+    </div>
+</div>
+
+<Section class="fourthPage">
+    <div Class="fourthPage__apiRequestContainer">
+
+
+        <!--1st testimonial-->
+        <div class="fourthPage__apiRequestContainer__testimonial">
+            <div class="fourthPage__apiRequestContainer__testimonial__firstTestimonialTitleContainer">
+                <strong class="fourthPage__apiRequestContainer__testimonial__firstTestimonialTitleContainer__title">Efficient Collaborating</strong>
+            </div>
+            <div class="fourthPage__apiRequestContainer__testimonial__firstTestimonialDescriptionContainer">
+                <b class="fourthPage__apiRequestContainer__testimonial__firstTestimonialDescriptionContainer__description">Collaborating with Protompany was just perfect, we did a long jurney to get here, I’m glad they do it that great</b>
+            </div>
+            <img src="./assets/imgs/DialogCard.svg">
+            <div id="fourthPage__apiRequestContainer__testimonial__catContainer1"></div> 
+        </div>
+
+
+        <!--2nd testimonial-->
+        <div class="fourthPage__apiRequestContainer__testimonial">
+            <div class="fourthPage__apiRequestContainer__testimonial__secondTestimonialTitleContainer">
+                <strong class="fourthPage__apiRequestContainer__testimonial__secondTestimonialTitleContainer__title">Intuitive Design</strong>
+            </div>
+            <div class="fourthPage__apiRequestContainer__testimonial__secondTestimonialDescriptionContainer">
+                <b class="fourthPage__apiRequestContainer__testimonial__secondTestimonialDescriptionContainer__description">I really liked the creativity and the special treatment they gave us, we specialy liked the crceativity of the design</b>
+            </div>
+            <img src="./assets/imgs/DialogCard.svg">
+            <section id="catContainer2">
+            <div id="fourthPage__apiRequestContainer__testimonial__catContainer2"></div>
+        </div>
+
+
+        <!--3rd testimonial-->
+        <div class="fourthPage__apiRequestContainer__testimonial">
+            <div class="fourthPage__apiRequestContainer__testimonial__thirdTestimonialTitleContainer">
+                <strong class="fourthPage__apiRequestContainer__testimonial__thirdTestimonialTitleContainer__title">Mindblowing Service</strong>
+            </div>
+            <div class="fourthPage__apiRequestContainer__testimonial__thirdTestimonialDescriptionContainer">
+                <b class="fourthPage__apiRequestContainer__testimonial__thirdTestimonialDescriptionContainer__description">I came just seeing how people talked about Protompany, a little incredulous, then I saw why they have that reputation</b>
+            </div>
+            <img src="./assets/imgs/DialogCard.svg">
+            <div id="fourthPage__apiRequestContainer__testimonial__catContainer3"></div>
+        </div>
+    </div>
+</Section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer-->
+<div class="footerContainer">
+    <div class="footerContainer__footer">
+        <div class="footerContainer__footer__logoContainer">
+            <img class="footerContainer__footer__logoContainer__logo" src="assets/imgs/protompanyFooterLogo.svg" alt="">
+        </div>
+        <!--navigation menu-->
+        <ul class="footerContainer__footer__navMenuContainer">
+            <a><li>Home</li></a>
+            <a><li>About</li></a>
+            <a><li>Testimonials</li></a>
+            <a><li>Contact</li></a>
+        </ul>
+        <!--icons-->
+        <div class="footerContainer__footer__iconsContainer">
+            <img class="footerContainer__footer__iconsContainer__twitterIcon" src="assets/imgs/TwitterIcon.svg" alt="">
+            <img class="footerContainer__footer__iconsContainer__facebookIcon" src="assets/imgs/facebookIcon.svg" alt="">
+            <img class="footerContainer__footer__iconsContainer__linkedinIcon" src="assets/imgs/linkedinIcon.svg" alt="">
+        </div>
+    </div>
+<!--arreglar jueguito de javascript, funcionalidad a la bar del top, mediaqueries, logo arribita en la pestaña y conectar a github-->
+</div>
+</div>
+</body>
+<script src="./scripts/simonSays.js"></script>
+<script src="./scripts/ApiRequest.js"></script>
+</html>
+
+
