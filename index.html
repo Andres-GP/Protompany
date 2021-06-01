@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="index,follow"> 
 
+  <!--favIcon-->
+  <link rel="shortcut icon" type="image/png" href="assets/imgs/favIcon.png">
+
   <!--Quicksand Font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -35,10 +38,9 @@
             </figure> 
             <!--navigation menu-->
             <ul class="header__inner__navMenu">
-                <a><li>Home</li></a>
-                <a><li>About</li></a>
-                <a><li>Testimonials</li></a>
-                <a><li>Contact</li></a>
+                <a href="#homePage" ><li>Home</li></a>
+                <a href="#ourWorkPage"><li>Our Work</li></a>
+                <a href="#testimonialsPage"><li>Testimonials & Contact</li></a>
             </ul>
         </div>
     </header>
@@ -57,7 +59,7 @@
 <!--Title and Description-->
 <div class="layerBackground"></div>
 <div class="layer">
-    <div class="layer__1stPage">
+    <div class="layer__1stPage" id="homePage">
         <div class="layer__1stPage__TitleDescriptionSection">
             <div class="layer__1stPage__TitleDescriptionSection__TitleDescriptionSection__TitleDescriptionContainer">
                 <diV class="layer__1stPage__TitleDescriptionSection__TitleDescriptionSection__TitleDescriptionContainer__TitleContainer">
@@ -98,7 +100,7 @@
 
 
 <!--2nd Page-->
-<div class="secondPage">
+<div class="secondPage" id="ourWorkPage">
     <!--title and subtitle-->
     <div class="secondPage__titleAndDescriptionContainer">
         <div class="secondPage__titleAndDescriptionContainer__titleContainer">
@@ -126,7 +128,7 @@
             <div id="green" class="color green right" data-color="green"></div>
           </div>
           <div class="btn-start-container">
-            <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Start</button>
+            <button id="buttonStart" class="btn-start" onclick="startGame()">Start</button>
           </div>
     </div>
 </div>
@@ -185,7 +187,7 @@
 
 
 <!--4th page-->
-<div class="fourthPagetitleAndDscription">
+<div class="fourthPagetitleAndDscription" id="testimonialsPage">
     <div class="fourthPageTitleAndDscription__titleContainer">
         <strong class="fourthPageTitleAndDscription__titleContainer__title">Our Clients Speak</strong>
     </div>
@@ -256,10 +258,9 @@
         </div>
         <!--navigation menu-->
         <ul class="footerContainer__footer__navMenuContainer">
-            <a><li>Home</li></a>
-            <a><li>About</li></a>
-            <a><li>Testimonials</li></a>
-            <a><li>Contact</li></a>
+            <a href="#homePage" ><li>Home</li></a>
+            <a href="#ourWorkPage"><li>Our Work</li></a>
+            <a href="#testimonialsPage"><li>Testimonials & Contact</li></a>
         </ul>
         <!--icons-->
         <div class="footerContainer__footer__iconsContainer">
@@ -268,7 +269,7 @@
             <img class="footerContainer__footer__iconsContainer__linkedinIcon" src="assets/imgs/linkedinIcon.svg" alt="">
         </div>
     </div>
-<!--traducir toodo el codigo del jueguito de javascript a ingles, funcionalidad a la bar del top, mediaqueries, logo arribita en la pestaña-->
+<!--funcionalidad a la bar del top, mediaqueries-->
 </div>
 </div>
 </body>
