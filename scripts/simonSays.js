@@ -4,7 +4,7 @@
       const orange = document.getElementById('orange')
       const green = document.getElementById('green')
       const btnEmpezar = document.getElementById('btnEmpezar')
-      const ULTIMO_NIVEL = 10
+      const ULTIMO_NIVEL = 4
 
 
       class Juego {
