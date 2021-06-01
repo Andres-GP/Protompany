@@ -1,3 +1,6 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -443,7 +446,7 @@ body {
 .blue.light {
     background: #2fd7ed;
     animation-name: bluelight;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-iteration-count: 3;
 }
 @keyframes bluelight {
@@ -462,7 +465,7 @@ body {
 .violet.light {
     background: #e056fd;
     animation-name: violetLight;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-iteration-count: 3;
 }
 @keyframes violetLight {
@@ -482,7 +485,7 @@ body {
 .orange.light {
     background: #ffbe76;
     animation-name: orangeLight;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-iteration-count: 3;
 }
 @keyframes orangeLight {
@@ -502,7 +505,7 @@ body {
 .green.light {
     background: #badc58;
     animation-name: greenLight;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-iteration-count: 3;
 }
 @keyframes greenLight {

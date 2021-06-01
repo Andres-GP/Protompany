@@ -6,8 +6,10 @@
       const btnEmpezar = document.getElementById('btnEmpezar')
       const ULTIMO_NIVEL = 10
 
+
       class Juego {
         constructor() {
+            this.inicializar = this.inicializar.bind(this)
             this.inicializar()
             this.generarSecuencia()
             setTimeout(this.sigienteNivel, 800)
@@ -16,7 +18,7 @@
         inicializar() {
           this.sigienteNivel = this.sigienteNivel.bind(this)
           this.elegirColor = this.elegirColor.bind(this)
-          btnEmpezar.classList.add('hide')
+          this.toggleBtnEmpezar()
           this.nivel = 1
           this.colores = {
             blue,
@@ -24,6 +26,13 @@
             orange,
             green
         }
+        }
+        toggleBtnEmpezar(){
+          if(btnEmpezar.classList.contains('hide')){
+            btnEmpezar.classList.remove('hide')
+          } else {
+            btnEmpezar.classList.add('hide')
+          }
         }
         generarSecuencia(){
           this.secuencia = new Array(ULTIMO_NIVEL).fill(0).map(n => Math.floor(Math.random() * 4))
@@ -67,9 +76,9 @@
         }
         iluminarColor(color){
           this.colores[color].classList.add('light')
-          setTimeout(() => this.apagarColor(color), 2000)
+          setTimeout(() => this.tunColorOff(color), 500)
         }
-        apagarColor(color){
+        tunColorOff(color){
           this.colores[color].classList.remove('light')
         }
         agregarEventosClick(){
@@ -93,15 +102,28 @@
             if (this.subnivel === this.nivel) {
               this.nivel++
               this.eliminarEventosClick()
-              if (this.nivel = ULTIMO_NIVEL + 1) {
-                //Ganó!
+              if (this.nivel === ULTIMO_NIVEL + 1) {
+                //You win!
+                this.youWin()
               } else {
-                setTimeout(this.sigienteNivel, 1000)
+                setTimeout(this.sigienteNivel, 700)
               }
             }
           }else{
-            //Perdió
+            //You lose
+            this.youLose()
           }
+        }
+        youWin() {
+          swal("You Win!" ,  "Congratulations, Your memory is just awesome" ,  "success" )
+          .then(this.inicializar)
+        }
+        youLose() {
+          swal("You Lost..." ,  "We´re sorry, you need to get more practice..." ,  "error" )
+          .then(() => {
+            this.eliminarEventosClick()
+            this.inicializar()
+          })
         }
       }
 
