@@ -12,7 +12,6 @@ body {
 .layer{
     position: relative;
     max-width: 1280px;
-    /**/
     padding: 0 10px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -938,6 +937,17 @@ body {
 
 @media (max-width: 900px) {
 
+/*layer*/
+.layer{
+  padding: none;
+  margin: none;
+  position: relative;
+  max-width: 600px;
+  /*margin: 0 auto;*/
+  box-sizing: border-box;
+  z-index: 1;
+}
+
 /*1st page*/
 
   /*Header*/
@@ -965,16 +975,64 @@ body {
 
   }
 
-  /*simon says*/
-
+/*simon says page*/
 
 /*3rd page*/
 
- /*testimonials*/
+  /*testimonials*/
+  .fourthPage__apiRequestContainer{
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+  }
 
 /*footer*/
+.footerContainer{
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 40px;
+
+}
+
+.footerContainer__footer{
+  margin-left: 15%;
+  position: relative;
+  padding-top: 50px;
+  width: 415px;
+  height: 450px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footerContainer__footer__navMenuContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footerContainer__footer__iconsContainer{
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+
+  justify-self: end;
+  
+}
 }
 
 
-/*añadir mediaqueries(terminar la pag del simon dice, los testimonios y las top y bottom bar y hacerlo funcional con las waves) 
+
+/*añadir mediaqueries por que me hace lo de dejarme scrolear hacia un lado!!!(terminar la pag del simon dice, los testimonios y las top y bottom bar y hacerlo funcional con las waves) 
 y estilos a los botones del top y botom bar*/
