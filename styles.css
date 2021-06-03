@@ -6,6 +6,7 @@
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    padding: 0px;
 
    }
 
@@ -13,6 +14,7 @@ body {
     position: relative;
     max-width: 1280px;
     padding: 0 10px;
+    
     margin: 0 auto;
     box-sizing: border-box;
     z-index: 1;
@@ -21,12 +23,16 @@ body {
 
 /*Header*/
 .header{
-    width: 100%;
+  max-width: 100%;
+  min-width: 10%;
     height: 100px;
     display: block;
+    
 }
 .header__inner{
-    width: 1500px;
+  max-width: 100%;
+  min-width: 10%;
+    
     height: 100%;
     display: block;
     margin: 0 auto; 
@@ -166,10 +172,6 @@ body {
     text-align: center;
 
 }
-.layer__1stPage__bottomImageContainer__bottomImage{
-
-}
-
 
 
 
@@ -197,7 +199,8 @@ body {
   justify-content: space-between;
   padding-top: 100px;
     margin-top: 200px;
-    width:100%;
+    max-width:100%;
+    min-width: 20%;
     height:600px;
     margin-bottom: 200px;
     background-color:#1E1E1E;
@@ -230,7 +233,8 @@ body {
     text-align: center;
     display: inline-block;
     position: relative;
-    width: 500px;
+    max-width: 500px;
+    min-width: 100px;
     margin: none;
     padding: none;
     margin-left: 8%;
@@ -270,8 +274,8 @@ body {
 }
 .secondPage__titleAndDescriptionContainer__backgroundImageContainer__backgroundImage{
     display: inline-block;
-    width: 621.86px;
-    height: 289.53px;
+    max-width: 100%;
+    min-width: 20%;
     opacity: 0.73;
     
 }
@@ -281,23 +285,24 @@ body {
 .secondPage__titleAndDescriptionContainer__subTitleContainer__ButtonsContainer {
   text-align: end;
   z-index: 2;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   position: relative;
-  height: 300px;
+  height: 200px;
   width: 100%;
-  
-  
 }
 
 
 .button__tryForFree{
-  margin-top: 120px;
+  margin-top: 70px;
   margin-right: 500px;
   position: static;
   display: inline-block;
   
   cursor: pointer;
-  width: 180px;
+  max-width: 180px;
+  min-width: 170px;
+  
   height: 52px;
   background: #00B6F0;
   color: #FFFFFF;
@@ -321,7 +326,8 @@ body {
   margin-top: none;
   
   cursor: pointer;
-  width: 180px;
+  max-width: 180px;
+  min-width: 170px;
   height: 52px;
   background: #FFFFFF;
   color: #112D57;
@@ -344,7 +350,7 @@ body {
 
   /*Simon Says*/
 .secondPage__simonSaysPrototypeContainer{
-  min-block-size:80%;
+  min-block-size:10%;
   margin-top: 40px;
 }
 
@@ -353,7 +359,7 @@ body {
   /*Game Board*/
 .gameboard {
     height: 90px;
-    width: 100%;
+    max-width: 100%;
     border-radius: 50%;
     overflow: hidden;
     
@@ -456,10 +462,13 @@ body {
     50%{background: #badc58; box-shadow: 0px 4px 15px 10px #00000050;}
     100%{background: #6ab04c; box-shadow: 0px 4px 15px 10px none;}
   }
-
+.btn-start-container{
+  
+  width: 100%;
+  height: 0px;
+}
 .btn-start {
-  margin-top: 120px;
-    position: absolute;
+    position: relative;
     cursor: pointer;
     width: 290px;
     height: 60px;
@@ -473,7 +482,7 @@ body {
     transition: .5s;
     outline: none;
     box-shadow: 0px 4px 15px 10px #00000050;
-    margin-left: 36%;
+    
     
   }
 
@@ -933,6 +942,10 @@ body {
 
 
 
+
+
+
+
 /*Media queries*/
 
 @media (max-width: 900px) {
@@ -950,6 +963,7 @@ body {
 
 /*1st page*/
 
+
   /*Header*/
   .header__inner__navMenu{
     display: none;
@@ -962,20 +976,106 @@ body {
   .layer__1stPage__mediaqueryContainer{
     margin-top: 140px;
     width: 20px;
-    height: 710px;
+    height: 200px;
   }
 
 /*2nd page*/
   .secondPage{
     flex-direction: column;
+    height: 1100px;
   }
 
   /*take a look at our work*/ 
+
+  .secondPage__titleAndDescriptionContainer__subTitleContainer__ButtonsContainer {
+  
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 300px;
+    width: 270px;
+
+  }
+  
+  .button__tryForFree{
+    margin-top: 45px;   
+    cursor: pointer;
+    max-width: 220px;
+    min-width: 220px;
+    height: 52px;
+    background: #00B6F0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    box-shadow: 0px 4px 15px 10px #00000050;
+  }
+  .button__learnMore {
+    margin-top: 1px;
+    margin-left: 5px;
+
+    cursor: pointer;
+    max-width: 220px;
+    min-width: 220px;
+    height: 52px;
+    background: #FFFFFF;
+    color: #112D57;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0px 4px 15px 10px #00000050;
+  }
+
+
   .secondPage__simonSaysPrototypeContainer{
+    min-block-size:10%;
+    margin-top: 40px;
+
+    width: 100%;
+    margin-left: 15%;
+  }
+  
+    /*Game Board*/
+  .gameboard {
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      
+      max-height: 350px;
+      max-width: 350px;
+      box-shadow: 0px 4px 15px 5px #00000049;
+  
+      min-height: 350px;
+      min-width: 350px;
+  }
+  .btn-start-container{
+  
+    width: 100%;
+    height: 0px;
 
   }
 
-/*simon says page*/
+  .btn-start {
+    margin-top: 600px;
+      position: absolute;
+      cursor: pointer;
+      width: 260px;
+      height: 60px;
+      background: #00B6F0;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 3px;
+      font-size: 22px;
+      top: calc(50% - 30px);
+      left: calc(50% - 160px);
+      transition: .5s;
+      outline: none;
+      box-shadow: 0px 4px 15px 10px #00000050;
+    }
+
+
 
 /*3rd page*/
 
@@ -1034,5 +1134,36 @@ body {
 
 
 
-/*añadir mediaqueries por que me hace lo de dejarme scrolear hacia un lado!!!(terminar la pag del simon dice, los testimonios y las top y bottom bar y hacerlo funcional con las waves) 
-y estilos a los botones del top y botom bar*/
+
+@media (max-width: 600px) {
+   /*simon says button*/  
+  .btn-start-container{
+  
+    width: 100%;
+    height: 0px;
+
+  }
+  .btn-start {
+    margin-left: 3s0px;
+    margin-top: 600px;
+      position: absolute;
+      cursor: pointer;
+      width: 290px;
+      height: 60px;
+      background: #00B6F0;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 3px;
+      font-size: 22px;
+      top: calc(50% - 30px);
+      left: calc(50% - 160px);
+      transition: .5s;
+      outline: none;
+      box-shadow: 0px 4px 15px 10px #00000050;
+    }
+}
+
+
+/*poner display block en el top bar para que no pase esa mamada, añadir mediaqueries bottom bar y hacerlo funcional con las waves 
+y estilos a los botones del top y botom bar, se puedo hacer perder 
+algo de tamaño al overmierdas(quirar los pocos pixeles que quedan)*/
