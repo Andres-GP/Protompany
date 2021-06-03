@@ -88,6 +88,63 @@ body {
 
 
 
+/*Mobile Menu*/
+
+.header__inner__mobileMenuContainer{
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.header__inner__mobileMenu__menuButton{
+  margin-top: 40px;
+  margin-right: 20px;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header__inner__mobileMenu__menuButton:focus .MenuContainer{
+  display: block;
+}
+.MenuContainer{
+  display: none;
+}
+
+.MenuContainer__mobileDropDownMenu{
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 37vh;
+  z-index: 6;
+  box-shadow: 0px 50px 30px 1px #0000002c;
+}
+.MenuContainer__mobileDropDownMenu a{
+
+  margin-right: 6%;
+  margin-top: 45px;
+  color:#20262A;
+    cursor: pointer;
+    font-size: 15;
+    font-weight: 400;
+    padding-left: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -966,6 +1023,10 @@ body {
   .header__inner__navMenu{
     display: none;
   }
+  /*Mobile Header*/
+  .header__inner__mobileMenu{
+    /*display: SE MUESTRA;*/
+  }
   /*1st page*/
 
   .layer__1stPage__mediaqueryContainer{
@@ -1197,6 +1258,21 @@ body {
 
 
 @media (max-width: 600px) {
+
+  /*Header*/
+  .header__inner__logoContainer{
+    height: 50%;
+    display: table;
+    float: left;
+
+  }
+  .header__inner__logoContainer__logo{
+    height: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
   /*Game Board*/
   .gameboard {
     height: 90px;
@@ -1223,7 +1299,7 @@ body {
     margin-top: 600px;
       position: absolute;
       cursor: pointer;
-      width: 250px;
+      width: 280px;
       height: 60px;
       background: #00B6F0;
       color: #FFFFFF;
