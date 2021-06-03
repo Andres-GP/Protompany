@@ -52,9 +52,10 @@ body {
 
   /*Navigation Menu*/
 .header__inner__navMenu{
-    float: right;
+    float: left;
     height: 100%;
-    margin-right: 30%;
+    margin-left: 6%;
+
 }
 .header__inner__navMenu a{
     
@@ -350,7 +351,6 @@ body {
 
   /*Simon Says*/
 .secondPage__simonSaysPrototypeContainer{
-  min-block-size:10%;
   margin-top: 40px;
 }
 
@@ -359,7 +359,6 @@ body {
   /*Game Board*/
 .gameboard {
     height: 90px;
-    max-width: 100%;
     border-radius: 50%;
     overflow: hidden;
     
@@ -616,7 +615,7 @@ body {
 }
 .thirdPageVideoContainer{
   width: 100%;
-  height: 380px;
+  height: 379px;
 }
 .thirdPageVideoContainer__thirdPagevideoPlayerScreen__container__backgroundWaves{
   width: 100%;
@@ -948,36 +947,101 @@ body {
 
 /*Media queries*/
 
-@media (max-width: 900px) {
 
-/*layer*/
-.layer{
-  padding: none;
-  margin: none;
-  position: relative;
-  max-width: 600px;
-  /*margin: 0 auto;*/
-  box-sizing: border-box;
-  z-index: 1;
-}
-
-/*1st page*/
-
+@media (max-width: 1170px) {
 
   /*Header*/
   .header__inner__navMenu{
     display: none;
+  }
+  /*1st page*/
+
+  .layer__1stPage__mediaqueryContainer{
+    margin-top: 140px;
+    width: 20px;
+    height: 700px;
   }
 
   /*bottom image*/
   .layer__1stPage__bottomImageContainer{
     display: none;
   }
-  .layer__1stPage__mediaqueryContainer{
-    margin-top: 140px;
-    width: 20px;
-    height: 200px;
-  }
+
+  /*footer*/
+.footerContainer{
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 40px;
+
+}
+
+.footerContainer__footer{
+  margin-left: 15%;
+  position: relative;
+  padding-top: 50px;
+  width: 415px;
+  height: 450px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footerContainer__footer__navMenuContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footerContainer__footer__iconsContainer{
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+
+  justify-self: end;
+  
+}
+
+.fourthPage__apiRequestContainer{
+  display: flex;
+  flex-direction: column;
+  height: 1300px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+
+}
+
+
+
+
+@media (max-width: 940px) {
+
+/*layer*/
+.layer{
+  padding: none;
+  margin: none;
+  position: relative;
+  max-width: 100%;
+  /*margin: 0 auto;*/
+  box-sizing: border-box;
+  z-index: 1;
+}
+.layer__1stPage__mediaqueryContainer{
+  margin-top: 140px;
+  width: 20px;
+  height: 200px;
+}
+
 
 /*2nd page*/
   .secondPage{
@@ -1030,11 +1094,10 @@ body {
 
 
   .secondPage__simonSaysPrototypeContainer{
-    min-block-size:10%;
     margin-top: 40px;
 
     width: 100%;
-    margin-left: 15%;
+    margin: none;
   }
   
     /*Game Board*/
@@ -1043,12 +1106,13 @@ body {
       border-radius: 50%;
       overflow: hidden;
       
-      max-height: 350px;
-      max-width: 350px;
+      max-height: 380px;
+      max-width: 380px;
       box-shadow: 0px 4px 15px 5px #00000049;
   
-      min-height: 350px;
-      min-width: 350px;
+      min-height: 380px;
+      min-width: 380px;
+      margin-left: 29%;
   }
   .btn-start-container{
   
@@ -1058,6 +1122,73 @@ body {
   }
 
   .btn-start {
+    margin-top: 600px;
+      position: absolute;
+      cursor: pointer;
+      width: 360px;
+      height: 60px;
+      background: #00B6F0;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 3px;
+      font-size: 22px;
+      top: calc(50% - 30px);
+      left: calc(50% - 160px);
+      transition: .5s;
+      outline: none;
+      box-shadow: 0px 4px 15px 10px #00000050;
+    }
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 750px) {
+  /*Game Board*/
+  .gameboard {
+    margin-left: 22%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  /*Game Board*/
+  .gameboard {
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+    max-height: 350px;
+    max-width: 350px;
+    box-shadow: 0px 4px 15px 5px #00000049;
+
+    min-height: 350px;
+    min-width: 350px;
+    margin-left: 12%;
+}
+   /*simon says button*/  
+  .btn-start-container{
+  
+    width: 100%;
+    height: 0px;
+
+  }
+  .btn-start {
+    margin-left: 30px;
     margin-top: 600px;
       position: absolute;
       cursor: pointer;
@@ -1074,23 +1205,7 @@ body {
       outline: none;
       box-shadow: 0px 4px 15px 10px #00000050;
     }
-
-
-
-/*3rd page*/
-
-  /*testimonials*/
-  .fourthPage__apiRequestContainer{
-    display: flex;
-    flex-direction: column;
-    height: 1300px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  
-  }
-
-/*footer*/
+     /*footer*/
 .footerContainer{
   text-align: center;
   width: 100%;
@@ -1103,7 +1218,7 @@ body {
   margin-left: 15%;
   position: relative;
   padding-top: 50px;
-  width: 415px;
+  width: 200px;
   height: 450px;
   text-align: center;
   align-items: center;
@@ -1130,38 +1245,22 @@ body {
   justify-self: end;
   
 }
+    
 }
 
 
 
 
-@media (max-width: 600px) {
-   /*simon says button*/  
-  .btn-start-container{
-  
-    width: 100%;
-    height: 0px;
 
-  }
-  .btn-start {
-    margin-left: 3s0px;
-    margin-top: 600px;
-      position: absolute;
-      cursor: pointer;
-      width: 290px;
-      height: 60px;
-      background: #00B6F0;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 3px;
-      font-size: 22px;
-      top: calc(50% - 30px);
-      left: calc(50% - 160px);
-      transition: .5s;
-      outline: none;
-      box-shadow: 0px 4px 15px 10px #00000050;
-    }
-}
+
+
+
+
+
+
+
+
+
 
 
 /*poner display block en el top bar para que no pase esa mamada, añadir mediaqueries bottom bar y hacerlo funcional con las waves 
