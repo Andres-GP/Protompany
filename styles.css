@@ -302,7 +302,7 @@ body {
 .button__tryForFree{
   cursor: pointer;
   margin-top: 70px;
-  margin-right: 500px;
+  margin-right: 0px;
   position: static;
   display: inline-block;
   
@@ -1096,6 +1096,7 @@ body {
   .button__tryForFree{
     margin-top: 45px;   
     cursor: pointer;
+    margin-right: 100px;
     max-width: 220px;
     min-width: 220px;
     height: 52px;
@@ -1314,5 +1315,4 @@ body {
 
 
 
-/* se puedo hacer perder 
-algo de tamaño al overmierdas(quirar los pocos pixeles que quedan)*/
+/*hacer menu movil*/
