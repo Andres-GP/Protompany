@@ -54,11 +54,11 @@ body {
 .header__inner__navMenu{
     float: left;
     height: 100%;
-    margin-left: 6%;
+    margin-left: 11%;
 
 }
 .header__inner__navMenu a{
-    
+  text-decoration-line: none;
     height: 100%;
     display: table;
     float: left;
@@ -67,9 +67,13 @@ body {
 .header__inner__navMenu a li{
     display: table-cell;
     vertical-align: middle;
-    color: black;
+    color:#20262A;
     cursor: pointer;
     font-size: 15;
+    font-weight: 400;
+    padding-left: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
     font-weight: 400;
     padding-left: 60px;
     text-decoration: none;
@@ -912,14 +916,13 @@ body {
 .footerContainer__footer__navMenuContainer a li{
     display: table-cell;
     vertical-align: middle;
-    color: black;
+    color:#20262A;
     cursor: pointer;
     font-size: 15;
     font-weight: 400;
     padding-left: 30px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
-    text-decoration:none;
 }
 
 
@@ -1311,6 +1314,5 @@ body {
 
 
 
-/*poner display block en el top bar para que no pase esa mamada, añadir mediaqueries bottom bar y hacerlo funcional con las waves 
-y estilos a los botones del top y botom bar, se puedo hacer perder 
+/* se puedo hacer perder 
 algo de tamaño al overmierdas(quirar los pocos pixeles que quedan)*/
