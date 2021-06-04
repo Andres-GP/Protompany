@@ -1311,7 +1311,7 @@ body {
     margin-top: 600px;
       position: absolute;
       cursor: pointer;
-      width: 280px;
+      width: 250px;
       height: 60px;
       background: #00B6F0;
       color: #FFFFFF;
@@ -1389,26 +1389,19 @@ body {
   justify-self: end;
   margin-right: 70px;
   
+}    
 }
-    
-}
+
+
+
 
 
 
 @media (max-width: 500px) {
   /*Game Board*/
   .gameboard {
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-    
-    max-height: 320px;
-    max-width: 320px;
-    box-shadow: 0px 4px 15px 5px #00000049;
-
-    min-height: 320px;
-    min-width: 320px;
-    margin-left: 12%;
+    max-height: 310px;
+    max-width: 310px;
 }
    /*simon says button*/  
   .btn-start-container{
@@ -1418,4 +1411,11 @@ body {
 
   }
 
+
+  /*Testimonial Container*/
+.fourthPage__apiRequestContainer__testimonial{
+  width: 370px;
+  text-align: center;
+ 
+}
 }
