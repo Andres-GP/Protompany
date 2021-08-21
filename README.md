@@ -1,6 +1,6 @@
 # Protompany
 
-Landing Page made for Protompany 
+Landing Page made for Protompany made in HTML, CSS and Javascript
 
 ---
 
