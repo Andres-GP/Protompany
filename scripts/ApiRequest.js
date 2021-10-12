@@ -2,6 +2,7 @@
 
 
 /*1st cat*/
+/*
 fetch("https://aws.random.cat/meow")
 .then(res => res.json())
 .then(data => getRandomCats1(data))
@@ -22,14 +23,14 @@ function getRandomCats1(data){
   height: 80px;" 
   src="${data.file}"/> `
 }
-
+*/
 
 
 
 
 
 /*2nd cat*/
-
+/*
 fetch("https://aws.random.cat/meow")
 .then(res => res.json())
 .then(data => getRandomCats2(data))
@@ -51,12 +52,12 @@ function getRandomCats2(data){
   height: 80px;" 
   src="${data.file}"/> `
 }
-
+*/
 
 
 
 /*3rd cat*/
-
+/*
 fetch("https://aws.random.cat/meow")
 .then(res => res.json())
 .then(data => getRandomCats3(data))
@@ -79,5 +80,5 @@ function getRandomCats3(data){
   src="${data.file}"/> `
 }
 
-
+*/ 
 
