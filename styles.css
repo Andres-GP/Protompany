@@ -803,12 +803,10 @@ body {
 /*first testimonial*/
 
 .fourthPage__apiRequestContainer__testimonial__firstTestimonialTitleContainer{
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 70%;
+  margin-left: 40px;
+  width: 320px;
   height: 30px;
   position:absolute;
   text-align: center;
