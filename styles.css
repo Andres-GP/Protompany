@@ -272,7 +272,7 @@ body {
 .secondPage{
     justify-content: space-between;
     padding-top: 100px;
-    margin-top: 200px;
+    margin-top: 0px;
     max-width:100%;
     min-width: 20%;
     height:600px;
@@ -302,7 +302,7 @@ body {
   /*Title and description*/
 
 .secondPage__titleAndDescriptionContainer{
-    padding-top: 50px ;
+    padding-top: 300px;
     text-align: center;
     display: inline-block;
     position: relative;
@@ -346,6 +346,7 @@ body {
   margin-top: 5%;
 }
 .secondPage__titleAndDescriptionContainer__backgroundImageContainer__backgroundImage{
+  padding-top: 250px;
     display: inline-block;
     max-width: 100%;
     min-width: 20%;
@@ -422,6 +423,7 @@ body {
 
   /*Simon Says*/
 .secondPage__simonSaysPrototypeContainer{
+  padding-top: 250px;
   margin-top: 40px;
 }
 
