@@ -4,7 +4,7 @@ Landing Page made for Protompany made in HTML, CSS and Javascript
 
 ---
 
-Take a look: https://andres-gp.github.io/Protompany/#ourWorkPage
+Take a look: https://andres-gp.github.io/Protompany/
 
 # Features
  - Reactive 
